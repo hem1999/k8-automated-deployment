@@ -1,0 +1,7 @@
+#Setting up the docker things
+1. Installed docker container runtime
+2. created Dockerfile using nginx and copy
+3. docker build -t <Image Name> <path to docker file>
+4. docker run --name surveyformc -d -p 8080:80 surveyform
+5. docker login hemu1999
+5. docker tag surveyform hemu1999/surveyform
