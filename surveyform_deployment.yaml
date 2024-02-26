@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hw1-deployment
+  name: hw2-deployment
   namespace: hw2
 spec:
   replicas: 3 
@@ -18,18 +18,3 @@ spec:
         image: hemu1999/surveyform:latest
         ports:
         - containerPort: 80
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: hw1-service
-  namespace: hw2
-spec:
-  selector:
-    app: surveyform
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80
-      nodePort: 30091
-  type: NodePort
