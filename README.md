@@ -2,7 +2,7 @@
 ## Group Members
 - Venkata Sai Ayyappa Hemanth Duddu (G01413649)
 - Uddip Yalamanchili (G01409008)
-- Divesh Upreti 
+- Divesh Upreti (G01269368)
 # Overview
 We have created 3 EC2 instances namely, k8, rancher and jenkins. On the hosted Jenkins EC2 Node, we installed jenkins, docker and rancher cli. On k8 EC2 we have installed docker and rancher agent while one rancher EC2, we have installed docker and created a contianer of rancher stable version.
 ### Jenkins EC2 details:
