@@ -1,3 +1,8 @@
+# SWE 645 Assignment 2
+## Group Members
+- Venkata Sai Ayyappa Hemanth Duddu (G01413649)
+- Uddip Yalamanchili (G01409008)
+- Divesh Upreti 
 # Overview
 We have created 3 EC2 instances namely, k8, rancher and jenkins. On the hosted Jenkins EC2 Node, we installed jenkins, docker and rancher cli. On k8 EC2 we have installed docker and rancher agent while one rancher EC2, we have installed docker and created a contianer of rancher stable version.
 ### Jenkins EC2 details:
@@ -56,13 +61,13 @@ We have created 3 EC2 instances namely, k8, rancher and jenkins. On the hosted J
 - You can check the status of the Jenkins service using the command:
 
 - `[ec2-user ~]$ sudo systemctl status jenkins`
-- Our jenkins is available at http://23.22.80.96:8080/
+- Our jenkins is available at http://50.17.89.204:8080/
 
 ## Github setup
 - Create an ssh key pair locally 
 - add the public key to the github sshkey in the repo settings
 - add the private key as the credentials on jenkins
-- create a webhook with the payload http://23.22.80.96:8080/web-hook/
+- create a webhook with the payload http://50.17.89.204:8080/web-hook/
 - create it
 
 ## Jenkins pipeline Setup
